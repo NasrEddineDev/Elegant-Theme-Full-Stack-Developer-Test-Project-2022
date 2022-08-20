@@ -1,0 +1,170 @@
+[29-May-2022 14:05:05 UTC] WordPress database error Table 'wp.wp_customers' doesn't exist for query SHOW FULL COLUMNS FROM `wp_customers` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:05:06 UTC] WordPress database error Table 'wp.wp_customers' doesn't exist for query SHOW FULL COLUMNS FROM `wp_customers` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:07:05 UTC] WordPress database error Table 'wp.customers' doesn't exist for query SHOW FULL COLUMNS FROM `customers` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:07:06 UTC] WordPress database error Table 'wp.customers' doesn't exist for query SHOW FULL COLUMNS FROM `customers` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:09:05 UTC] WordPress database error Table 'wp.customers' doesn't exist for query SHOW FULL COLUMNS FROM `customers` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:09:06 UTC] WordPress database error Table 'wp.customers' doesn't exist for query SHOW FULL COLUMNS FROM `customers` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:47:52 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:47:52 UTC] WordPress database error Unknown column 'user_url ' in 'field list' for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url `, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:47:52 pm', NULL, 0, 'test') made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:47:52 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:47:52 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:47:52 UTC] WordPress database error Unknown column 'user_url ' in 'field list' for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url `, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:47:52 pm', NULL, 0, 'test') made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:47:52 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:47:57 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:47:57 UTC] WordPress database error Unknown column 'user_url ' in 'field list' for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url `, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:47:57 pm', NULL, 0, 'test') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:47:57 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:48:03 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:48:03 UTC] WordPress database error Unknown column 'user_url ' in 'field list' for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url `, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:48:03 pm', NULL, 0, 'test') made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:48:03 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:48:03 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:48:03 UTC] WordPress database error Unknown column 'user_url ' in 'field list' for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url `, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:48:03 pm', NULL, 0, 'test') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:48:03 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:05 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:49:05 UTC] WordPress database error Unknown column 'user_url ' in 'field list' for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url `, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:49:05 pm', NULL, 0, 'test') made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:05 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:05 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:49:05 UTC] WordPress database error Unknown column 'user_url ' in 'field list' for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url `, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:49:05 pm', NULL, 0, 'test') made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:05 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:05 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:49:05 UTC] WordPress database error Unknown column 'user_url ' in 'field list' for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url `, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:49:05 pm', NULL, 0, 'test') made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:05 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:28 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:49:28 UTC] WordPress database error Column 'user_activation_key' cannot be null for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:49:28 pm', NULL, 0, 'test') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:28 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:31 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:49:31 UTC] WordPress database error Column 'user_activation_key' cannot be null for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:49:31 pm', NULL, 0, 'test') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:31 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:34 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:49:34 UTC] WordPress database error Column 'user_activation_key' cannot be null for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:49:34 pm', NULL, 0, 'test') made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:34 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:34 UTC] PHP Notice:  Undefined variable: message in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 33
+[29-May-2022 14:49:34 UTC] WordPress database error Column 'user_activation_key' cannot be null for query INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('test', 'password', 'test', 'test', 'http:/\\/wp.com', '05/29/2022 02:49:34 pm', NULL, 0, 'test') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:49:34 UTC] WordPress database error Cannot add or update a child row: a foreign key constraint fails (`wp`.`wp_profiles`, CONSTRAINT `profile_user` FOREIGN KEY (`user_id`) REFERENCES `wp_users` (`ID`)) for query INSERT INTO `wp_profiles` (`user_id`, `phone`, `budget`, `message`) VALUES (0, '054654545', '50000', 'test') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/My-Test-Plugin-For-Elegant-Theme.php')
+[29-May-2022 14:56:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_hash_password() in /var/www/html/wordpress/wp-includes/user.php:1931
+Stack trace:
+#0 /var/www/html/wordpress/wp-includes/user.php(2584): wp_insert_user(Array)
+#1 /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php(39): wp_create_user('test', 'passsword', 'test')
+#2 /var/www/html/wordpress/wp-settings.php(418): include_once('/var/www/html/w...')
+#3 /var/www/html/wordpress/wp-config.php(97): require_once('/var/www/html/w...')
+#4 /var/www/html/wordpress/wp-load.php(50): require_once('/var/www/html/w...')
+#5 /var/www/html/wordpress/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#6 {main}
+  thrown in /var/www/html/wordpress/wp-includes/user.php on line 1931
+[29-May-2022 14:58:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_user_by() in /var/www/html/wordpress/wp-includes/user.php:1766
+Stack trace:
+#0 /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php(27): username_exists('test')
+#1 /var/www/html/wordpress/wp-settings.php(418): include_once('/var/www/html/w...')
+#2 /var/www/html/wordpress/wp-config.php(97): require_once('/var/www/html/w...')
+#3 /var/www/html/wordpress/wp-load.php(50): require_once('/var/www/html/w...')
+#4 /var/www/html/wordpress/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#5 {main}
+  thrown in /var/www/html/wordpress/wp-includes/user.php on line 1766
+[29-May-2022 14:59:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_user_by() in /var/www/html/wordpress/wp-includes/user.php:1766
+Stack trace:
+#0 /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php(27): username_exists('test')
+#1 /var/www/html/wordpress/wp-settings.php(418): include_once('/var/www/html/w...')
+#2 /var/www/html/wordpress/wp-config.php(97): require_once('/var/www/html/w...')
+#3 /var/www/html/wordpress/wp-load.php(50): require_once('/var/www/html/w...')
+#4 /var/www/html/wordpress/wp-admin/admin.php(34): require_once('/var/www/html/w...')
+#5 /var/www/html/wordpress/wp-admin/plugins.php(10): require_once('/var/www/html/w...')
+#6 {main}
+  thrown in /var/www/html/wordpress/wp-includes/user.php on line 1766
+[29-May-2022 14:59:20 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 14:59:20 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:00:56 UTC] PHP Warning:  require(/var/www/html/wordpress/wp-content/wp-blog-header.php): failed to open stream: No such file or directory in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 21
+[29-May-2022 15:00:56 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/html/wordpress/wp-content/wp-blog-header.php' (include_path='.:/usr/share/php') in /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php on line 21
+[29-May-2022 15:00:56 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:00:56 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:01:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function main() on null in /var/www/html/wordpress/wp-includes/functions.php:1310
+Stack trace:
+#0 /var/www/html/wordpress/wp-blog-header.php(16): wp()
+#1 /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php(21): require('/var/www/html/w...')
+#2 /var/www/html/wordpress/wp-settings.php(418): include_once('/var/www/html/w...')
+#3 /var/www/html/wordpress/wp-config.php(97): require_once('/var/www/html/w...')
+#4 /var/www/html/wordpress/wp-load.php(50): require_once('/var/www/html/w...')
+#5 /var/www/html/wordpress/wp-admin/admin.php(34): require_once('/var/www/html/w...')
+#6 /var/www/html/wordpress/wp-admin/plugins.php(10): require_once('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wordpress/wp-includes/functions.php on line 1310
+[29-May-2022 15:01:20 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:01:20 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:01:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function main() on null in /var/www/html/wordpress/wp-includes/functions.php:1310
+Stack trace:
+#0 /var/www/html/wordpress/wp-blog-header.php(16): wp()
+#1 /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php(21): require_once('/var/www/html/w...')
+#2 /var/www/html/wordpress/wp-settings.php(418): include_once('/var/www/html/w...')
+#3 /var/www/html/wordpress/wp-config.php(97): require_once('/var/www/html/w...')
+#4 /var/www/html/wordpress/wp-load.php(50): require_once('/var/www/html/w...')
+#5 /var/www/html/wordpress/wp-admin/admin.php(34): require_once('/var/www/html/w...')
+#6 /var/www/html/wordpress/wp-admin/plugins.php(10): require_once('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wordpress/wp-includes/functions.php on line 1310
+[29-May-2022 15:01:57 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:01:57 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:03:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function main() on null in /var/www/html/wordpress/wp-includes/functions.php:1310
+Stack trace:
+#0 /var/www/html/wordpress/wp-blog-header.php(16): wp()
+#1 /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php(21): require_once('/var/www/html/w...')
+#2 /var/www/html/wordpress/wp-settings.php(418): include_once('/var/www/html/w...')
+#3 /var/www/html/wordpress/wp-config.php(97): require_once('/var/www/html/w...')
+#4 /var/www/html/wordpress/wp-load.php(50): require_once('/var/www/html/w...')
+#5 /var/www/html/wordpress/wp-admin/admin.php(34): require_once('/var/www/html/w...')
+#6 /var/www/html/wordpress/wp-admin/plugins.php(10): require_once('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wordpress/wp-includes/functions.php on line 1310
+[29-May-2022 15:03:52 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:03:52 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:03:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function main() on null in /var/www/html/wordpress/wp-includes/functions.php:1310
+Stack trace:
+#0 /var/www/html/wordpress/wp-blog-header.php(16): wp()
+#1 /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php(21): require_once('/var/www/html/w...')
+#2 /var/www/html/wordpress/wp-settings.php(418): include_once('/var/www/html/w...')
+#3 /var/www/html/wordpress/wp-config.php(97): require_once('/var/www/html/w...')
+#4 /var/www/html/wordpress/wp-load.php(50): require_once('/var/www/html/w...')
+#5 /var/www/html/wordpress/wp-admin/admin.php(34): require_once('/var/www/html/w...')
+#6 /var/www/html/wordpress/wp-admin/plugins.php(10): require_once('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wordpress/wp-includes/functions.php on line 1310
+[29-May-2022 15:03:53 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:03:53 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:03:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function main() on null in /var/www/html/wordpress/wp-includes/functions.php:1310
+Stack trace:
+#0 /var/www/html/wordpress/wp-blog-header.php(16): wp()
+#1 /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php(21): require_once('/var/www/html/w...')
+#2 /var/www/html/wordpress/wp-settings.php(418): include_once('/var/www/html/w...')
+#3 /var/www/html/wordpress/wp-config.php(97): require_once('/var/www/html/w...')
+#4 /var/www/html/wordpress/wp-load.php(50): require_once('/var/www/html/w...')
+#5 /var/www/html/wordpress/wp-admin/admin.php(34): require_once('/var/www/html/w...')
+#6 /var/www/html/wordpress/wp-admin/plugins.php(10): require_once('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wordpress/wp-includes/functions.php on line 1310
+[29-May-2022 15:03:54 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:03:54 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:03:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function main() on null in /var/www/html/wordpress/wp-includes/functions.php:1310
+Stack trace:
+#0 /var/www/html/wordpress/wp-blog-header.php(16): wp()
+#1 /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php(21): require_once('/var/www/html/w...')
+#2 /var/www/html/wordpress/wp-settings.php(418): include_once('/var/www/html/w...')
+#3 /var/www/html/wordpress/wp-config.php(97): require_once('/var/www/html/w...')
+#4 /var/www/html/wordpress/wp-load.php(50): require_once('/var/www/html/w...')
+#5 /var/www/html/wordpress/wp-admin/admin.php(34): require_once('/var/www/html/w...')
+#6 /var/www/html/wordpress/wp-admin/plugins.php(10): require_once('/var/www/html/w...')
+#7 {main}
+  thrown in /var/www/html/wordpress/wp-includes/functions.php on line 1310
+[29-May-2022 15:03:54 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:03:54 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:04:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_user_by() in /var/www/html/wordpress/wp-includes/user.php:1766
+Stack trace:
+#0 /var/www/html/wordpress/wp-content/plugins/My-Test-Plugin-For-Elegant-Theme.php(27): username_exists('test')
+#1 /var/www/html/wordpress/wp-settings.php(418): include_once('/var/www/html/w...')
+#2 /var/www/html/wordpress/wp-config.php(97): require_once('/var/www/html/w...')
+#3 /var/www/html/wordpress/wp-load.php(50): require_once('/var/www/html/w...')
+#4 /var/www/html/wordpress/wp-admin/admin.php(34): require_once('/var/www/html/w...')
+#5 /var/www/html/wordpress/wp-admin/plugins.php(10): require_once('/var/www/html/w...')
+#6 {main}
+  thrown in /var/www/html/wordpress/wp-includes/user.php on line 1766
+[29-May-2022 15:04:01 UTC] PHP Notice:  is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:04:01 UTC] PHP Notice:  is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/support/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /var/www/html/wordpress/wp-includes/functions.php on line 5775
+[29-May-2022 15:13:40 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/wordpress/wp-includes/update.php on line 413
+[29-May-2022 15:18:44 UTC] PHP Warning:  copy(/var/www/html/wordpress/wp-admin/includes/update-core.php): failed to open stream: Permission denied in /var/www/html/wordpress/wp-admin/includes/class-wp-filesystem-direct.php on line 309
+[29-May-2022 15:22:08 UTC] PHP Warning:  copy(/var/www/html/wordpress/wp-admin/includes/update-core.php): failed to open stream: Permission denied in /var/www/html/wordpress/wp-admin/includes/class-wp-filesystem-direct.php on line 309
