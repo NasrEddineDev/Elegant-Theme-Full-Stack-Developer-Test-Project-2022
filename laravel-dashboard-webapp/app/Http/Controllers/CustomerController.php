@@ -115,12 +115,18 @@ class CustomerController extends Controller
             'email'   =>  $data["email"],
             'password'   =>  "password",
             'url'   =>  url('customers.show', $id),
+            'phone'   =>  $data["phone"],
+            'budget'   =>  $data["budget"],
+            'message'   =>  $data["message"],
             'role'   =>  "subscriber"
         ]);
- 
-        // if ($response->ok());
-
-        return redirect()->route('customers.index');
+        $body = json_decode($response->body());
+        if($body->result)
+            return redirect()->back()->with('message', "The customer ".$data["name"]." has been saved in WP Successfully!.")
+                                    ->with('result', $body->result);
+        else
+                return redirect()->back()->with('message', "The customer ".$data["name"]." is not saved in WP")
+                                        ->with('result', $body->result);
 
     }
 }

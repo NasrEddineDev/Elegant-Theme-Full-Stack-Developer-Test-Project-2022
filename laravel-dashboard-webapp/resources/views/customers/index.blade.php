@@ -7,6 +7,13 @@
         <div class="col">
           <div class="card">
          <!-- Card header -->
+        @if(session()->has('message'))
+            <div class="alert alert-{{ session()->get('result') ? 'success' : 'danger'}} mt-2 ml-2 mr-2" role="alert">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <h4 class="alert-heading">{{ session()->get('result') ? 'Well done!' : 'not done!'}}</h4>
+                {{ session()->get('message') }} 
+            </div>
+        @endif
         <div class="card-header border-0">
           <h3 class="mb-0">Customers List</h3>
         </div>

@@ -1,0 +1,21 @@
+composer create-project laravel/laravel laravel-dashboard-webapp
+
+cd laravel-dashboard-webapp
+
+php artisan serve
+
+Argo
+
+02:30
+
+Step 01: 01:15min
+  create from
+  creating database
+  save to database
+  errors verification (server-side) 12:30-01:43
+Step 02: 01:30min 07:53-
+    Create Layout, sidebare, footer, header,
+    ToDo: 
+
+Step 03:
+    ToDo: add authentication

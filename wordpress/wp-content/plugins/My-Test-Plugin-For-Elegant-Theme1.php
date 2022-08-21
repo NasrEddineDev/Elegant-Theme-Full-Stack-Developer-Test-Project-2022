@@ -31,6 +31,9 @@ function addetuser(WP_REST_Request $request){
         'user_email'   =>  $data["email"],
         'user_pass'   =>  $data["password"],
         'user_url'   =>  $data["url"],
+        'phone'   =>  $data["phone"],
+        'budget'   =>  $data["budget"],
+        'message'   =>  $data["message"],
         'role'   =>  $data["role"]
     );
 
@@ -38,11 +41,12 @@ function addetuser(WP_REST_Request $request){
     
     
     if( is_wp_error( $user_id  ) ) {
-        return $user_id->get_error_message();
+        return false;//$user_id->get_error_message();
+        return ["message" => $user_id->get_error_message(), "result" => false];
     }
     
     $user = get_user_by('id', $user_id);
-    return $userdata;
+    return ["message" => $userdata, "result" => true];
 }
 
 add_action("rest_api_init", function(){

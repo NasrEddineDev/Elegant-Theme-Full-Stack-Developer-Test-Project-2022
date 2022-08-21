@@ -40,7 +40,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/', function () {
 		return view('dashboard');
-});
+})->middleware(['auth']);
 
 Route::get('/form', function () {
     return view('form');
