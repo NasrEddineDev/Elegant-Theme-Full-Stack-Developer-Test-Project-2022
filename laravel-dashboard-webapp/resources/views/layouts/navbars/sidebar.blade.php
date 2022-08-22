@@ -23,7 +23,7 @@
                 </a>
             </li>
 
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i class="ni ni-planet text-blue"></i> {{ __('Products') }}
                 </a>
@@ -38,7 +38,7 @@
                   <i class="ni ni-bullet-list-67 text-default"></i>
                   <span class="nav-link-text">Settings</span>
                 </a>
-              </li>
+              </li> -->
         </ul>
         </div>
       </div>
