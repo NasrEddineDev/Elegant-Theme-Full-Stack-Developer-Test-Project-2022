@@ -105,22 +105,23 @@ class CustomerController extends Controller
     {
         $customer = Customer::find($id);
         $data = $customer->toArray();
-        // $array[] = (object) ['Submit' => 'Create'];
-        // $response = Http::withBasicAuth('nasreddine', 'E*pa55w0rd*T')
-        //                 ->post('http://wp.com.com/users', $array);
-        $response = Http::post('http://wp.com/index.php/wp-json/wp/v2/addetuser', [
-            'login'  =>  str_replace('_', ' ', $data["name"]),
-            'first_name'    =>  "",
-            'last_name'    =>  "",
-            'email'   =>  $data["email"],
-            'password'   =>  "password",
-            'url'   =>  url('customers.show', $id),
-            'phone'   =>  $data["phone"],
-            'budget'   =>  $data["budget"],
-            'message'   =>  $data["message"],
-            'role'   =>  "subscriber"
-        ]);
+        $response = Http::withHeaders([
+                'Authorization' => 'Basic ' . base64_encode('nasreddine' . ':' . 'password')
+                ])
+            ->post('http://wp.com/index.php/wp-json/wp/v2/addetuser', [
+                'login'  =>  str_replace('_', ' ', $data["name"]),
+                'first_name'    =>  "",
+                'last_name'    =>  "",
+                'email'   =>  $data["email"],
+                'password'   =>  "password",
+                'url'   =>  url('customers.show', $id),
+                'phone'   =>  $data["phone"],
+                'budget'   =>  $data["budget"],
+                'message'   =>  $data["message"],
+                'role'   =>  "subscriber"
+            ]);
         $body = json_decode($response->body());
+        dd($body);
         if($body->result)
             return redirect()->back()->with('message', "The customer ".$data["name"]." has been saved in WP Successfully!.")
                                     ->with('result', $body->result);
