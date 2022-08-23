@@ -124,11 +124,13 @@ php artisan serve
 ```
 <a name="screenshots"></a>
 7. Screenshots
-login page 
-![Architecture of 3D Secure implementation](figures/3D%20Secure%20Components.png?raw=true "Title")
+* Login page 
 
-submission page
-![Architecture of 3D Secure implementation](figures/3D%20Secure%20Components.png?raw=true "Title")
+![Login Page](Images/Login%20Page.png?raw=true "Title")
+
+* Submission page
+
+![Submission Page](Images/Submit%20Page.png?raw=true "Title")
 
 <a name="step-02"></a>
 ## 3) Step 02
@@ -147,9 +149,12 @@ password: password
 ```
 * Screenshoots
 dashboard
-![Architecture of 3D Secure implementation](figures/3D%20Secure%20Components.png?raw=true "Title")
+
+![Dashboard Page](Images/Dashboard%20Page.png?raw=true "Title")
+
 Customers list
-![Architecture of 3D Secure implementation](figures/3D%20Secure%20Components.png?raw=true "Title")
+
+![Customers Page](Images/Customers%20Page.png?raw=true "Title")
 
 <a name="step-03"></a>
 ## 4) Step 03
@@ -170,7 +175,7 @@ Create a WordPress plugin to handle this Ajax request.
 ### B) Implementation
 
 * Screenshot of the Button to create WP Account
-![Architecture of 3D Secure implementation](figures/3D%20Secure%20Components.png?raw=true "Title")
+![Create WP Account Button](figures/Create%20WP%20Account%20Button.png?raw=true "Title")
 
 * Source code of My-Plugin-For-Elegant-Theme
 ```
