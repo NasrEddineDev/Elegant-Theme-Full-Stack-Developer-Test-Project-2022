@@ -5,20 +5,11 @@
  1) [Introduction](##introduction)
  2) [Project Brief](#project-brief)
  3) [Step 01](#step-01)
-     * [a. Description](#description-step-01)
-     * [b. Implementation](#implementation-step-01)
- 3) [Step 02](#step-02)
-     * [a. Description](#description-step-02)
-     * [b. Implementation](#implementation-step-02)
- 3) [Step 03](#step-03)
-     * [a. Description](#description-step-03)
-     * [b. Implementation](#implementation-step-03)
- 3) [Step 04](#step-04)
-     * [a. Description](#description-step-04)
-     * [b. Implementation](#implementation-step-04)
- 3) [Step 05](#step-05)
-     * [a. Description](#description-step-05)
-     * [b. Implementation](#implementation-step-05)
+ 4) [Step 02](#step-02)
+ 5) [Step 03](#step-03)
+ 6) [Step 04](#step-04)
+ 7) [Step 05](#step-05)
+
 <a name="introduction"></a>
 ## 1) Introduction 
 Laravel/WordPress Lead Gen Form
