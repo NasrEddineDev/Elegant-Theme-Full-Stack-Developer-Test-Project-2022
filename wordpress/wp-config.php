@@ -20,10 +20,10 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wp' );
+define( 'DB_NAME', 'wordpress' );
 
 /** Database username */
-define( 'DB_USER', 'nasreddine' );
+define( 'DB_USER', 'wordpress' );
 
 /** Database password */
 define( 'DB_PASSWORD', 'password' );
@@ -32,7 +32,7 @@ define( 'DB_PASSWORD', 'password' );
 define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'X^_ul,c/%!}czIj]$p2g{5KehRRUr~t)$#~PV/?lL,j{2=a-;DxybFMJ7p^I<SM4' );
-define( 'SECURE_AUTH_KEY',  '!&Ionx,dDU@b a<#LbD$GTug4b0W`|yNq MB4FuAeBXzFPod=LWI_`J)@50:d!v:' );
-define( 'LOGGED_IN_KEY',    '1)R_v7oC~VW}50BpuUD1qQiFksyZkp.J`BfpcCJs)0@QXh-9O+lg(_X*_O32^7,(' );
-define( 'NONCE_KEY',        'Og@`z&0]2P;Zs65yRB7KBp/`@ZIf*P~|gM]t[zWe4UO09$[%IF0a,Qo`V`%3}~V-' );
-define( 'AUTH_SALT',        'Y9mXs>yv-0Qk4S-;;d}]~+-F|y6{o,}W5KzV-fJ!yCEAQb)3r=[4[NapN[Er7GE>' );
-define( 'SECURE_AUTH_SALT', ' 1o3%A5F@gL}:p^VK48Pg,Ms<!t2OXnlIQa:oW:5ls,lp=vz1+CiOb`/H|;,k$Ln' );
-define( 'LOGGED_IN_SALT',   'hiu@(Dy~QXfB ~o4!C<x!b=sYoGI.7jE2@SJ(rl#xitKMU*5$ k[47yTbe8n)J$N' );
-define( 'NONCE_SALT',       ' v3|NJ HU:<a6N%sM{G V.j-!#b#x;GGsU;LpG3pIX*u(qvqYzL4m(seh2D).K?c' );
+define('AUTH_KEY',         '|j] !!b>d1X!:i@6RL,7Z?Gqu8iwcB^%`1P22F-,HsW+%?y[^$`X3T7DpzB+5:Dj');
+define('SECURE_AUTH_KEY',  '{OqbX+w)uS}qqa)nGpd,5Z%DLuH}Oa&=w=,tqAJ2a>=Em>|<{Y5W0RA.GYZKc=8f');
+define('LOGGED_IN_KEY',    '%UXfph=h1Q$z0rHJosd|Oki3-pQ&*tR8REjFXr`^R95{>4_#}wK^;$vH7fPZ+n[l');
+define('NONCE_KEY',        ',fS,%V#S$40hR[<5Au]`,>YE?}0?1GT:4vri(a0TA|x`+sUhkbW7M332MdJ<9$/G');
+define('AUTH_SALT',        'q^kr7fF)OaWq|7G#oY$S]p`bt$ jBzNyYhwjKsf( El<awvj@US0sGWcIN]IsM}9');
+define('SECURE_AUTH_SALT', 'vHQ?^W-;`6R1O7s/wt)FMg)2pq{h|||2fa%8Wc*@54L9T5>A)hxI+Wm?kq)3y<zP');
+define('LOGGED_IN_SALT',   'bD<T]>6`7=b73^/Tqg?6UK-;7~ue*9[>RFJ?{1Q/r3s6Np};~VBizPH#T_PpaxcP');
+define('NONCE_SALT',       'H5eN/gxK,_mP`ty7|Key;0EpD0h0UAk)A=hdM5d&nHAA6,y#a6m,GVpQR`-+e}7c');
 
 /**#@-*/
 
@@ -79,10 +79,10 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
-// define( 'WP_DEBUG_LOG', true);
+define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
+
 
 
 /* That's all, stop editing! Happy publishing. */
@@ -94,7 +94,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
-
-/**With this ‘direct’ method implemented, you will be able to update or upgrade your WordPress 
-    and plugins installations to newer versions without having to provide any FTP details.     */
-define('FS_METHOD','direct');
