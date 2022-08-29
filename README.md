@@ -44,7 +44,7 @@ The form should include the following fields:
 
 <a name="implementation-step-01"></a>
 ### B) Implementation
-You will find in this repository the folder "Laravel-dashboard" containing
+You will find in this repository the folder "laravel-dashboard-webapp" containing
 the source code of this project.
 * Source code of RegisterController/storeCustomer method 
 ```
@@ -84,8 +84,29 @@ the source code of this project.
         return redirect()->back()->with('message', 'Your information has been saved ');
     }
 ```
-
-### Please ollow next steps to deploy this web app:
+* Because this form is publically exposed, we need to protect it using rate limiter
+Code added in 
+```
+    /**
+     * Configure the rate limiters for the application.
+     *
+     * @return void
+     */
+    protected function configureRateLimiting()
+    {
+        RateLimiter::for('api', function (Request $request) {
+            return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
+        });
+        RateLimiter::for('submitCustomer', function (Request $request) {
+            return Limit::perMinute(100);
+        });
+    }
+```
+Route of the form that collect customers data will be
+```
+Route::middleware('throttle:submitCustomer')->post('/submission', 'App\Http\Controllers\Auth\RegisterController@storeCustomer')->name('store-customer');
+```
+### Steps to deploy this web app:
 
 1. Install the dependencies with Composer
 ```
@@ -254,8 +275,48 @@ have been imported from the Laravel dashboard. This button should link
 back to the matching customer profile in the Laravel dashboard.  
 <a name="implementation-step-04"></a>
 ### B) Implementation
- Screenshot of profile page in WP website:
- 
+
+#### Screenshot of users page in WP dashboard: 
+![View Profile in Laravel Dashboard](figures/View%20Profile%20In%20Laravel%20Dashboard.png?raw=true "Title")
+ Screenshot of the user profile page with additional fields: 
+![User Profile Page](figures/User%20Profile%20Page.png?raw=true "Title")
+
+#### B.1) You need to install code snippets plugin:
+Code Snippets is an easy, clean and simple way to run code snippets on your site, without adding code to 
+page directly.
+To install it, click on this [link of Code Snippets Plugin](https://wordpress.org/plugins/code-snippets).
+
+#### B.1) Create New Snippet and activate it:
+In the code snippet page, click on Add New button, then put in the title field the name "Customize users list"
+or what you want, then copy paste the code bellow, finally click on Save and Activate your Code Snippet
+* The Code of "Customize users list" Snippet
+```
+function wph_admin_user_columns($columns)
+{
+    unset($columns['posts']);
+    unset($columns['account_status']);
+    $columns['wpsite-show-ids'] = 'Laravel Dashboard';
+    return $columns;
+}
+
+add_filter('manage_users_columns', 'wph_admin_user_columns', 10, 3);
+
+function wph_admin_users_custom_columns($value, $column_id, $user_id)
+{
+    if ($column_id == 'wpsite-show-ids') {
+        $user = get_user_by('ID', $user_id);
+        if (is_null($user->user_url) || empty($user->user_url)) {
+            return    "";
+        } else {
+            return "<input id=\"post-query-export\" class=\"button\" type=\"button\" value=\"Go to Laravel".
+				" Dashboard\" name=\"\" onclick=\"document.location.href='" . $user->user_url . "'\">";
+        }
+    }
+    return $value;
+}
+
+add_action('manage_users_custom_column', 'wph_admin_users_custom_columns', 10, 3);
+```
 <a name="step-05"></a>
 ## 6) Step 05
 <a name="description-step-05"></a>
