@@ -197,7 +197,7 @@ Create a WordPress plugin to handle this Ajax request.
 ### B) Implementation
 
 * Screenshot of the Button to create WP Account
-![Create WP Account Button](figures/Create%20WP%20Account%20Button.png?raw=true "Title")
+![Create WP Account Button](Images/Create%20WP%20Account%20Button.png?raw=true "Title")
 
 * Source code of My-Plugin-For-Elegant-Theme
 ```
@@ -277,9 +277,10 @@ back to the matching customer profile in the Laravel dashboard.
 ### B) Implementation
 
 #### Screenshot of users page in WP dashboard: 
-![View Profile in Laravel Dashboard](figures/View%20Profile%20In%20Laravel%20Dashboard.png?raw=true "Title")
- Screenshot of the user profile page with additional fields: 
-![User Profile Page](figures/User%20Profile%20Page.png?raw=true "Title")
+![View Profile in Laravel Dashboard](Images/View%20Profile%20In%20Laravel%20Dashboard.png?raw=true "Title")
+
+#### Screenshot of the user profile page with additional fields: 
+![User Profile Page](Images/User%20Profile%20Page.png?raw=true "Title")
 
 #### B.1) You need to install code snippets plugin:
 Code Snippets is an easy, clean and simple way to run code snippets on your site, without adding code to 
