@@ -5,6 +5,7 @@ namespace Tests\Feature;
 // use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use App\Models\User;
+use App\Models\Customer;
 use Tests\TestCase;
 
 class SubmissionTest extends TestCase
@@ -18,44 +19,58 @@ class SubmissionTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_new_customer_can_submitted()
+    public function test_new_customer_can_be_stored()
     {
-        $user = factory(User::class)->make();
-        $response = $this
-            ->actingAs($user)
-            ->postJson(route('api.user.store'), [
-                'name' => $this->faker->name,
-                'email' => $this->faker->safeEmail,
-            ]);
-        $response
-            ->assertStatus(201)
-            ->assertJson([
-                'created' => true,
-            ]);
-
         $response = $this->post('/submission', [
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-            'password' => 'password'
+            'name' => 'testa',
+            'phone' => 215454545454,
+            'email' => 'test',
+            'budget' => 1000,
+            'message' => 'required',
         ]);
 
-        $this->assertAuthenticated();
-        $response->assertRedirect(RouteServiceProvider::HOME);
+        $response->assertRedirect('/');
     }
 
-    /**
-     * A basic feature test example.
-     *
-     * @return void
-     */
-    public function test_example()
+    public function test_submission_customer_duplication()
     {
-        $user = User::find(13);
+        $customer1 = Customer::make([
+            'name' => 'test',
+            'phone' => 215454545454,
+            'email' => 'test',
+            'budget' => 1000,
+            'message' => 'required',
+        ]);
+        $customer2 = Customer::make([
+            'name' => 'testa',
+            'phone' => 215454545454,
+            'email' => 'test',
+            'budget' => 1000,
+            'message' => 'required',
+        ]);
 
-        // $response = $this->actingAs($user)
-        //                  ->withSession(['foo' => 'bar'])
-        //                  ->get('/');
+        $this->assertTrue($customer1->name != $customer2->name);
+    }
 
-        $response->assertStatus(200);
+    public static $saved_customer;
+    public function test_delete_customer()
+    {
+        $customer = Customer::factory()->count(1)->create();
+
+        $customer = Customer::first();
+
+        if ($customer){
+            $customer->delete();
+        }
+        $customer->save();
+        self::$saved_customer = $customer;
+        $this->assertTrue(true);
+    }
+
+    public function test_database()
+    {
+        $this->assertDatabaseHas('customers',[
+            'name' => self::$saved_customer->name
+        ]);
     }
 }

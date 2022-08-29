@@ -277,7 +277,7 @@ back to the matching customer profile in the Laravel dashboard.
 ### B) Implementation
 
 #### Screenshot of users page in WP dashboard: 
-![View Profile in Laravel Dashboard](Images/View%20Profile%20In%20Laravel%20Dashboard.png?raw=true "Title")
+![View Profile in Laravel Dashboard](Images/View%20Profile%20in%20Laravel%20Dashboard.png?raw=true "Title")
 
 #### Screenshot of the user profile page with additional fields: 
 ![User Profile Page](Images/User%20Profile%20Page.png?raw=true "Title")
@@ -327,8 +327,74 @@ application that will test if the form submission and customer profile export
 functions work as expected.
 <a name="implementation-step-05"></a>
 ### B) Implementation
-* Source code of My-Plugin-For-Elegant-Theme
+* Source code of the customer form submission tests 
 ```
-<a name="conclusion"></a>
-## 1) Conclusion 
+    public function test_submission_screen_can_be_rendered()
+    {
+        $response = $this->get('/submission');
 
+        $response->assertStatus(200);
+    }
+
+    public function test_new_customer_can_be_stored()
+    {
+        $response = $this->post('/submission', [
+            'name' => 'testa',
+            'phone' => 215454545454,
+            'email' => 'test',
+            'budget' => 1000,
+            'message' => 'required',
+        ]);
+
+        $response->assertRedirect('/');
+    }
+
+    public function test_submission_customer_duplication()
+    {
+        $customer1 = Customer::make([
+            'name' => 'test',
+            'phone' => 215454545454,
+            'email' => 'test',
+            'budget' => 1000,
+            'message' => 'required',
+        ]);
+        $customer2 = Customer::make([
+            'name' => 'testa',
+            'phone' => 215454545454,
+            'email' => 'test',
+            'budget' => 1000,
+            'message' => 'required',
+        ]);
+
+        $this->assertTrue($customer1->name != $customer2->name);
+    }
+
+    public static $saved_customer;
+    public function test_delete_customer()
+    {
+        $customer = Customer::factory()->count(1)->create();
+
+        $customer = Customer::first();
+
+        if ($customer){
+            $customer->delete();
+        }
+        $customer->save();
+        self::$saved_customer = $customer;
+        $this->assertTrue(true);
+    }
+
+    public function test_database()
+    {
+        $this->assertDatabaseHas('customers',[
+            'name' => self::$saved_customer->name
+        ]);
+    }
+```
+
+
+* Screenshot of the the customer form submission tests: 
+![Submit Customer Tests.png](Images/Submit%20Customer%20Tests.png?raw=true "Title")
+<a name="conclusion"></a>
+## 7) Conclusion 
+I will do it when I have time!.
