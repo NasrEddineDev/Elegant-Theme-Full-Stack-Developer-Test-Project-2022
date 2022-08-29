@@ -287,7 +287,7 @@ Code Snippets is an easy, clean and simple way to run code snippets on your site
 page directly.
 To install it, click on this [link of Code Snippets Plugin](https://wordpress.org/plugins/code-snippets).
 
-#### B.1) Create New Snippet and activate it:
+#### B.2) Create New Snippet and activate it:
 In the code snippet page, click on Add New button, then put in the title field the name "Customize users list"
 or what you want, then copy paste the code bellow, finally click on Save and Activate your Code Snippet
 * The Code of "Customize users list" Snippet
